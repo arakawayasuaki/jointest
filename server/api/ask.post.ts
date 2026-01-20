@@ -46,7 +46,8 @@ Rules:
 2. The user might ask things like "A店で..." (Store A). You need to join 'stores' and 'print_logs' or filter accordingly.
 3. Dates are stored as strings 'YYYY-MM-DD'.
 4. Do not output markdown code blocks. Just the raw SQL string.
-5. IMPORTANT: The column 'count' MUST be escaped as '[count]' (brackets) because it is a reserved keyword in Alasql.` },
+5. IMPORTANT: The column 'count' MUST be escaped as '[count]' (brackets) because it is a reserved keyword in Alasql.
+6. 'date' is the print date. 'taken_date' is the date the photo was taken (撮影日). Use 'taken_date' if the user asks about when the photo was taken (e.g. 撮影した).` },
                 { role: "user", content: prompt }
             ]
         });
