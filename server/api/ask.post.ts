@@ -35,7 +35,7 @@ export default defineEventHandler(async (event) => {
   if (openai) {
       try {
         const response = await openai.chat.completions.create({
-            model: "gpt-3.5-turbo", // or similar
+            model: "gpt-4o-mini", // or similar
             messages: [
                 { role: "system", content: `You are a helper that translates natural language to SQL for a specific schema. 
                 
